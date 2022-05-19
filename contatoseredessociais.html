@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/lampada-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,500&family=Montserrat:ital,wght@0,100;0,200;1,200&display=swap" rel="stylesheet">
+    <title>Contatos e Redes Sociais</title>
+</head>
+<body>
+
+    <header>
+        <div class="caixa">
+            <h1>
+                <img src="imagens/Foto_perfil.png" class="fotoperfil" alt="Foto do perfil Victor Pintassilgo">
+            </h1>
+            <nav class="navheader">
+                <ul>
+                    <li>
+                        <a href="Meu Site.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="projetos.html">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="contatoseredessociais.html">Contatos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <main>
+        <nav class="redes-sociais">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/victor-pintassilgo-2b94a27b/">Linkedin</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/victorpintassilgo/">Instagram</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/victor.pintassilgo">Facebook</a>
+                </li>
+            </ul>
+        </nav>
+
+        <form class="contatos">
+            <label for="nomesobrenome">Nome e Sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" name="" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea name="" id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea>
+
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="radio-email"><input type="radio" name="contato" value="
+                email" id="radio-email">E-mail</label>
+                
+                <label for="radio-telefone"><input type="radio" name="contato" value="
+                telefone" id="radio-telefone">Telefone</label>
+                
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="
+                whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select>
+                    <option value="">Manhã</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noite</option>
+                </select>
+            </fieldset>
+
+            <label class="label-checkbox"><input type="checkbox" class="checkbox" checked> Gostaria de receber nossas novidades por e-mail?</label>
+
+            <input type="submit" value="Enviar Formulário" class="enviar">
+        </form>
+
+        <div class="tabela-horario">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8hrs ~ 20hrs</td>               
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8hrs ~ 20hrs</td>                
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8hrs ~ 20hrs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <img src="imagens/logo.png" alt="Lâmpada com engrenagens">
+        <p class="copyright">&copy; Copyright Victor Pintassilgo</p>
+    </footer>
+</body>
+</html>
